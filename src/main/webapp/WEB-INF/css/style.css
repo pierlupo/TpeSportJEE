@@ -1,0 +1,123 @@
+:root {
+    --black: #333;
+    --blue: #7186FF;
+    --red: #C1272D;
+    --shaded-red: rgb(223, 149, 149);
+    --green: #00751F;
+    --shaded-green : rgb(175, 225, 175);
+    --white: #FFF;
+    --blueish: #022F40;
+    --lightCyan: #D9F7FA;
+    --platinum: #D8DDDE;
+    --timberwolf:#CFCBCA;
+    --kaki:#ABA194;
+    --mint: #F1F7ED;
+    --slategrey: #243E36;
+    --cambridgeblue:#7CA982;
+    --nianza: #E0EEC6;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    width:100vw;
+    margin: 0;
+    background-color: var(--platinum);
+    font-family: Carlito;
+}
+
+
+.loginOrRegisterFormContainer{
+    margin-top:200px;
+    margin-right: auto;
+    margin-left: auto;
+    width:300px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height:25px;
+    letter-spacing:0.2rem;
+}
+#mainHeader{
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    align-items: start;
+    background-color: var(--timberwolf);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+#mainHeader h1{
+    margin: 0 0 0 20px;
+    color: var(--black);
+    font-family: Cantarell, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#mainNav{
+    position: absolute;
+    background-color:var(--timberwolf);
+    width: 100%;
+    top: 40px;
+    padding-bottom: 10px;
+    /*display: none;*/
+}
+#mainNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 90px;
+}
+#mainNav a{
+    color: var(--black);
+    text-decoration: none;
+    font-family: Cantarell, Arial, sans-serif;
+    font-size: 1.5em;
+    display: block;
+    margin: 10px;
+}
+#mainNav a:hover{
+    color: var(--slategrey);
+}
+
+#menuToggle{
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    align-self: start;
+    margin-left: auto;
+
+}
+#logoImg{
+    padding: 5px;
+    z-index: 1000;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+}
